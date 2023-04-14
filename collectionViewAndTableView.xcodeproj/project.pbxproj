@@ -14,6 +14,10 @@
 		A2995DD829E88A5E00E76BAE /* collectionViewAndTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2995DD629E88A5E00E76BAE /* collectionViewAndTableView.xcdatamodeld */; };
 		A2995DDA29E88A5F00E76BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2995DD929E88A5F00E76BAE /* Assets.xcassets */; };
 		A2995DDD29E88A5F00E76BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2995DDB29E88A5F00E76BAE /* LaunchScreen.storyboard */; };
+		A2995DEA29E88AF200E76BAE /* collectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2995DE829E88AF200E76BAE /* collectionTableViewCell.swift */; };
+		A2995DEB29E88AF200E76BAE /* collectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2995DE929E88AF200E76BAE /* collectionTableViewCell.xib */; };
+		A2995DF029E88B2C00E76BAE /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2995DEE29E88B2C00E76BAE /* MyCollectionViewCell.swift */; };
+		A2995DF129E88B2C00E76BAE /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2995DEF29E88B2C00E76BAE /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A2995DD929E88A5F00E76BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2995DDC29E88A5F00E76BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2995DDE29E88A5F00E76BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2995DE829E88AF200E76BAE /* collectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionTableViewCell.swift; sourceTree = "<group>"; };
+		A2995DE929E88AF200E76BAE /* collectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = collectionTableViewCell.xib; sourceTree = "<group>"; };
+		A2995DEE29E88B2C00E76BAE /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2995DEF29E88B2C00E76BAE /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		A2995DCC29E88A5E00E76BAE /* collectionViewAndTableView */ = {
 			isa = PBXGroup;
 			children = (
+				A2995DE529E88AA700E76BAE /* tableViewCell */,
+				A2995DE429E88A9C00E76BAE /* collectionCell */,
 				A2995DCD29E88A5E00E76BAE /* AppDelegate.swift */,
 				A2995DCF29E88A5E00E76BAE /* SceneDelegate.swift */,
 				A2995DD129E88A5E00E76BAE /* ViewController.swift */,
@@ -68,6 +78,24 @@
 				A2995DD629E88A5E00E76BAE /* collectionViewAndTableView.xcdatamodeld */,
 			);
 			path = collectionViewAndTableView;
+			sourceTree = "<group>";
+		};
+		A2995DE429E88A9C00E76BAE /* collectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				A2995DEE29E88B2C00E76BAE /* MyCollectionViewCell.swift */,
+				A2995DEF29E88B2C00E76BAE /* MyCollectionViewCell.xib */,
+			);
+			path = collectionCell;
+			sourceTree = "<group>";
+		};
+		A2995DE529E88AA700E76BAE /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A2995DE829E88AF200E76BAE /* collectionTableViewCell.swift */,
+				A2995DE929E88AF200E76BAE /* collectionTableViewCell.xib */,
+			);
+			path = tableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2995DF129E88B2C00E76BAE /* MyCollectionViewCell.xib in Resources */,
 				A2995DDD29E88A5F00E76BAE /* LaunchScreen.storyboard in Resources */,
 				A2995DDA29E88A5F00E76BAE /* Assets.xcassets in Resources */,
 				A2995DD529E88A5E00E76BAE /* Main.storyboard in Resources */,
+				A2995DEB29E88AF200E76BAE /* collectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +173,8 @@
 			files = (
 				A2995DD829E88A5E00E76BAE /* collectionViewAndTableView.xcdatamodeld in Sources */,
 				A2995DD229E88A5E00E76BAE /* ViewController.swift in Sources */,
+				A2995DF029E88B2C00E76BAE /* MyCollectionViewCell.swift in Sources */,
+				A2995DEA29E88AF200E76BAE /* collectionTableViewCell.swift in Sources */,
 				A2995DCE29E88A5E00E76BAE /* AppDelegate.swift in Sources */,
 				A2995DD029E88A5E00E76BAE /* SceneDelegate.swift in Sources */,
 			);
